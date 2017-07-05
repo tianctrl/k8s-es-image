@@ -47,5 +47,5 @@ RUN useradd --no-create-home --user-group elasticsearch \
 
 VOLUME ["/data"]
 EXPOSE 9200 9300
-
+RUN chmod +x /run.sh
 CMD ["/run.sh"]
